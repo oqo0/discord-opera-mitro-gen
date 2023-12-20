@@ -7,5 +7,6 @@ string url = "https://discord.com/billing/partner-promotions/1180231712274387115
 while (true)
 {
     Console.WriteLine(url + await tokenGenerator.CreateAsync());
+    Thread.Sleep(10);
     Console.WriteLine();
 }
