@@ -9,3 +9,8 @@ Simple unlimited token generator
 
 > [!WARNING]  
 > The abuse of nitro tokens for obtaining nitro is prohibited by Discord. Use the tokens you receive at your own risk.
+
+Project build
+```
+dotnet publish -c release -r win-x64 --self-contained true /p:PublishSingleFile=true
+```
