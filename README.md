@@ -12,5 +12,8 @@ Simple unlimited token generator
 
 Project build
 ```
-dotnet publish -c release -r win-x64 --self-contained true /p:PublishSingleFile=true
+dotnet publish -c release -r <RID> --self-contained true /p:PublishSingleFile=true
 ```
+`win-x64` for Windows 64-bit  
+`linux-x64` for Linux 64-bit  
+`osx-x64` for macOS 64-bit  
