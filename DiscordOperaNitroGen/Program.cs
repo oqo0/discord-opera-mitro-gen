@@ -51,7 +51,7 @@ public static class DiscordOperaNitroGen
             var responseBody = await response.Content.ReadAsStringAsync();
             var fulfillmentResponse = JsonSerializer.Deserialize<FulfillmentResponse>(responseBody);
     
-            Console.WriteLine("https://discord.com/billing/partner-promotions/1180231712274387115/" + fulfillmentResponse.Token.Replace("\n", ""));
+            Console.WriteLine("https://discord.com/billing/partner-promotions/1180231712274387115/" + fulfillmentResponse.Token);
         }
         else
         {
