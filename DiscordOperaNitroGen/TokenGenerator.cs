@@ -28,6 +28,8 @@ public class TokenGenerator
 
     private HttpRequestMessage GetHttpRequestMessage()
     {
+        var partnerUserId = Guid.NewGuid();
+        
         return new HttpRequestMessage
         {
             Method = HttpMethod.Post,
@@ -50,7 +52,7 @@ public class TokenGenerator
                                 "Chrome/119.0.0.0 Safari/537.36 " +
                                 "OPR/105.0.0.0 (Edition Yx GX)" }
             },
-            Content = new StringContent("{\"partnerUserId\":\"0\"}")
+            Content = new StringContent($"{{\"partnerUserId\":\"{partnerUserId}\"}}")
         };
     }
 }
